@@ -1,19 +1,3 @@
-# vision_ocr_example
+# ocr_computer_vision_reader
 
-> npm install --save @google-cloud/vision
-
-> npm install --save @google-cloud/translate
-
-> npm install --save @google-cloud/text-to-speech
-
-> npm install tesseract.js
-
-> npm install onoff
-
-> npm install play-sound
-
-> npm install say
-
-> npm install fs
-
-Easy example to use both, TesseractJS and GCloud Vision OCR. Uses GCloud if an internet connection is available (fast), TesseractJS when not (slow).
+This is the repository for a portable, RaspberryPi based device to help out (partially) blind people to read text and recognize their surroundings. It uses the GoogleCloud API to do an OCR operation and convert the results to Wavefront voices if there is an internet connection. In the event of having no connection, TesseractJS will do the job and hand the result over to sayJS, which will take longer with a lower voice quality.
